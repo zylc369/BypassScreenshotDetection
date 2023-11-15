@@ -61,7 +61,8 @@ public class DragViewLayout extends RelativeLayout {
         super(context, attrs, defStyleAttr);
         mScreenWidth = context.getResources().getDisplayMetrics().widthPixels;
         mScreenHeight = context.getResources().getDisplayMetrics().heightPixels;
-        mTouchSlop = ViewConfiguration.get(context).getScaledTouchSlop();
+//        mTouchSlop = ViewConfiguration.get(context).getScaledTouchSlop();
+        mTouchSlop = 2;
         mWindowManager = (WindowManager) getContext().getSystemService(Context.WINDOW_SERVICE);
     }
 
@@ -120,6 +121,9 @@ public class DragViewLayout extends RelativeLayout {
                     //执行贴边
                     startAnim();
                     isDrag = false;
+
+                    // 这种写法能够保证拖动的情况下，不要让悬浮框上的按钮响应点击事件
+                    return false;
                 }
                 break;
             default:

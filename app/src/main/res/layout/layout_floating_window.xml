@@ -1,7 +1,7 @@
 <buwai.bypassscreenshotdetection.flowview.DragViewLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@android:color/white"
+    android:background="@drawable/floating_window_border"
     android:padding="@dimen/spacing_level1">
 
     <TextView
@@ -11,26 +11,27 @@
         android:gravity="center_vertical"
         android:text="@string/float_view_tips"
         android:textColor="@android:color/black"
-        android:textSize="16sp" />
+        android:textSize="@dimen/front_h4" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tv_title"
-        android:layout_marginTop="@dimen/spacing_level1">
+        android:layout_below="@id/tv_title">
 
         <Button
             android:id="@+id/btn_bypass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/bypass" />
+            android:text="@string/bypass_function"
+            android:textSize="@dimen/front_h4" />
 
         <Button
             android:id="@+id/btn_close"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/spacing_level1"
-            android:text="@string/close" />
+            android:text="@string/close"
+            android:textSize="@dimen/front_h4" />
     </LinearLayout>
 
 </buwai.bypassscreenshotdetection.flowview.DragViewLayout>

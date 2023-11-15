@@ -8,7 +8,7 @@ public class AppConst {
 
     public interface RequestCode {
         int FLOATING_WINDOW_PERMISSION = 1;
-        int FOREGROUND_SERVICE_CODE = 2;
+        int COMMON_SERVICE_CODE = 2;
     }
 
 }

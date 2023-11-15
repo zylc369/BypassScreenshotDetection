@@ -28,6 +28,7 @@ public class TransparentActivity extends Activity {
         LinearLayout llContain = findViewById(R.id.ll_contain);
         Switch switchTipsButton = findViewById(R.id.sw_tips);
         Button btnOpenFloatView = findViewById(R.id.btn_open_float_view);
+        Button btnFinish = findViewById(R.id.btn_finish);
 
         switchTipsButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -58,6 +59,11 @@ public class TransparentActivity extends Activity {
         });
 
         btnOpenFloatView.setOnClickListener(v -> FloatingWindowService.open(TransparentActivity.this));
+
+        btnFinish.setOnClickListener(v -> {
+            // 结束进程
+            Process.killProcess(Process.myPid());
+        });
     }
 
     private void openTipsDialog() {
