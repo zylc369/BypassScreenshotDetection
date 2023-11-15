@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/transparent_activity"
+    android:orientation="vertical"
+    tools:context=".TransparentActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_contain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/transparent_activity_border"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_level1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/txt_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/transparent_page_tips"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/spacing_level1"
+                android:text="@string/transparent_page_switch_tips_text"
+                android:textColor="@color/black" />
+
+            <Switch
+                android:id="@+id/sw_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:checked="false"
+                android:showText="true"
+                android:switchTextAppearance="@style/switchTextAppearance"
+                android:textOff="@string/transparent_page_switch_showed"
+                android:textOn="@string/transparent_page_switch_hided"
+                android:thumb="@drawable/thumb_bg"
+                android:track="@drawable/track_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_level1">
+
+            <Button
+                android:id="@+id/btn_open_float_view"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_gravity="center_vertical"
+                android:paddingStart="@dimen/button_padding"
+                android:paddingEnd="@dimen/button_padding"
+                android:text="@string/open_float_view"
+                android:textSize="@dimen/front_h4"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

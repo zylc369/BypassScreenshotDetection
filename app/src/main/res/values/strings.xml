@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">绕过截屏隐私检测</string>
+    <string name="transparent_page_tips">绕过隐私检测的透明页</string>
+    <string name="float_view_tips">进入需要截图的页面</string>
+    <string name="open_float_view">打开悬浮窗</string>
+    <string name="click_me">点我</string>
+    <string name="running">运行中</string>
+    <string name="close">关闭</string>
+    <string name="bypass">绕过</string>
+    <string name="transparent_page_switch_tips_text">隐藏提示：</string>
+    <string name="transparent_page_switch_hided">已隐藏</string>
+    <string name="transparent_page_switch_showed">未隐藏</string>
+    <string name="transparent_page_close_dialog_tips">是否关闭这个APP？</string>
+    <string name="dialog_confirm">确定</string>
+    <string name="dialog_cancel">取消</string>
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="button_padding">8dp</dimen>
+    <dimen name="spacing_level1">8dp</dimen>
+    <dimen name="switch_diameter">30dp</dimen>
+    <dimen name="switch_radius">15dp</dimen>
+
+    <dimen name="front_h4">12sp</dimen>
+    <dimen name="front_h5">8sp</dimen>
+</resources>
