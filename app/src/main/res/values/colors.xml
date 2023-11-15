@@ -9,5 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red">#FF0000</color>
     <color name="transparent_tips_bg">#20FF0000</color>
-    <color name="floating_window_bg">#80ffffff</color>
+    <color name="floating_window_bg">#B0FFFFFF</color>
 </resources>
