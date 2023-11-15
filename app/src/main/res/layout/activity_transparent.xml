@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:text="@string/transparent_page_switch_tips_text"
-                android:textColor="@color/black" />
+                android:textColor="@android:color/holo_red_light" />
 
             <Switch
                 android:id="@+id/sw_tips"
@@ -65,6 +65,7 @@
                 android:paddingStart="@dimen/button_padding"
                 android:paddingEnd="@dimen/button_padding"
                 android:text="@string/close"
+                android:textColor="@android:color/holo_red_light"
                 android:textSize="@dimen/front_h4" />
         </LinearLayout>
 
